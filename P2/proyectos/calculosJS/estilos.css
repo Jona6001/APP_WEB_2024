@@ -1,0 +1,163 @@
+*{
+    margin: 8;
+    padding: 8;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(calle.jpg);
+    background-size: cover;
+    height: 100vmax;
+}
+
+#contenedor{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+h1{
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    text-align: center;
+    color: aliceblue;
+    font-size: 3vw;
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* estilos.css
+body {
+    background-color: #26727c86;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    border: 3px solid rgb(1, 40, 66);
+}
+
+h1 {
+    color: #740aa5;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input[type="number"], select {
+    padding: 5px;
+    margin: 10px 0;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #2e6b3c;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #2ebe32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px; 
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+#resultado {
+    color: #333;
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} */

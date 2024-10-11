@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Mi Primera Web</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Mi primera Web</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="contenido.html">Contenido</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Contacto</h2>
+        <form action="enviar_email.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+<br><br>
+            <label for="biografia">Biografía:</label>
+            <textarea id="biografia" name="biografia"></textarea>
+<br><br>
+            <label>Edad:</label>
+            <input type="radio" id="edad1" name="edad" value="0 a 3">
+            <label for="edad1">0 a 3</label>
+<br><br>
+            <input type="radio" id="edad2" name="edad" value="4 a 5">
+            <label for="edad2">4 a 5</label>
+
+            <br><br>
+            <input type="submit" value="Enviar Email">
+        </form>
+    </section>
+</body>
+</html>
+
