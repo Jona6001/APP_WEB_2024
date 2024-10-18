@@ -12,10 +12,10 @@
     <h1>.:Calculadora Básica:.</h1>
     <hr>
     
-    <p> Número 1:   <input type="number" id="n1" autofocus>   </p>
-    <p> Numero 2:   <input type="number" id="n2">   </p>
+    <p class="t1"> Número 1:   <input class="caja1"  type="number" id="n1" autofocus>   </p>
+    <p class="t1"> Numero 2:   <input class="caja1"  type="number" id="n2">   </p>
 
-    <p> Tipo de operación: 
+    <p class="t1"> Tipo de operación: 
          <select id="tipo"> 
             <option value="+" selected>Suma</option>
             <option value="-">Resta</option>
@@ -23,11 +23,12 @@
             <option value="/">Division</option>
         </select>
         </form> </p>
-
-        <input type="button" value="Calcular" onclick="operaciones()">
-        <hr>
+<center> 
+        <input type="button" value="Calcular" onclick="operaciones()" id="boton">
+   
+    <hr>
          <div id="resultado">  </div>
-    </div>
+    </div> </center>
     <br>
    
 </body>
