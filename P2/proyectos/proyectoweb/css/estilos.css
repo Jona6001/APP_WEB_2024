@@ -1,0 +1,150 @@
+/* Aplicar estilos generales */
+body {
+    background-color: white; 
+    font-family: 'Arial', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    line-height: 1.6;
+}
+/* APLICAR ESTILOS A EL HEADER "INICIO" */
+#inicio{
+    background-image: url(../img/fondo1.jpg);
+    background-size: cover;
+    height: 100vmin;
+}
+
+.contenedor{
+    margin: auto;
+    width: 90%;
+    max-width: 1920px;
+
+}
+
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu p{
+    display: inline;
+    font-size: 2vmax;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.lista{
+    display: flex;
+    list-style-type: none;
+    font-size: 1vw;
+
+}
+
+.lista li{
+    margin-left: 1.5vmin;
+    justify-content: center;
+}
+
+.btn-menu{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+.btn-menu:hover{
+    color: white;
+    font-size: 1.6vw;
+    text-decoration: underline;
+    border: 1px solid black;
+}
+
+
+.titular{
+    margin-top: 12rem;
+    text-align: center;
+}
+
+.titular h1{
+    font-size: 4vw;
+    margin: 0;
+}
+
+
+.titular h2{
+    font-size: 2.5vw;
+    margin-bottom: 4vw;
+}
+
+
+.btn{
+    background-color: #305c2c;
+    padding: 2vw;
+    font-size: 1vw;
+    color: white;
+    text-decoration: none;
+}
+
+.btn:hover{
+    font-size: 1.1vw;
+}
+
+.btn:active{
+    background-color: rgb(159, 211, 176);
+    color: black;
+}
+
+
+/* Aplicar estilos a la sección "sobremi" */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+main img {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    margin-right: 20px;
+    box-shadow:8px 11px 15px blue;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+main img:hover{
+    border-radius: 5%;
+}
+
+
+main div.sobremi {
+    max-width: 8%;
+    text-align: justify;
+}
+
+#trabajos{
+    color: white    ;
+    background-color: rgb(97, 97, 170);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease; /
+}
+
+
+#trabajos:hover {
+    background-color: #202f41; 
+}
+
+/* APLICAR ESTILOS A LA SECCIÓN "SERVICIOS" */
+
+
+/* Aplicar estilos al pie */
