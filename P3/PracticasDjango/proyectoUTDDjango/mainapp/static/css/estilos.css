@@ -1,0 +1,261 @@
+/* Aplicar estilos */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    text-decoration: none;
+ }
+ 
+ p,h1,h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+ 
+ ul,ol{
+    margin-left: 20px;
+ }
+ 
+ body{
+    background-color: #555151;
+ }
+ 
+ /* Estilos cabecera */
+header {
+   max-width: 1212px;
+   height: 140px;
+   background-color: #1d9263;
+   border: 1px solid #333;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 20px;
+   box-sizing: border-box;
+}
+
+#logotipo {
+   display: flex;
+   align-items: center;
+}
+
+#logotipo img {
+   width: 60px;
+   margin-right: 15px;
+}
+
+#logotipo h1 {
+   font-weight: bolder;
+   color: white;
+   letter-spacing: 2px;
+   font-size: 24px;
+}
+
+/* Estilos Barra de navegación */
+nav {
+   max-width: 1212px;
+   background-color: #1b1e1f;
+   margin: 0 auto;
+   box-shadow: 0px 2px 5px gray;
+   font-size: 15px;
+   padding: 0 20px;
+   box-sizing: border-box;
+}
+
+nav > ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+}
+
+nav > ul > li {
+   position: relative;
+}
+
+nav > ul > li > a {
+   color: #d1d4d6;
+   padding: 10px 15px;
+   display: block;
+   text-decoration: none;
+   transition: all 300ms;
+}
+
+nav > ul > li > a:hover {
+   background-color: #2ba977;
+   box-shadow: 0px 0px 5px #444 inset;
+   color: white;
+}
+
+nav > ul > li > ul {
+   display: none;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   background-color: #f2f1f0;
+   width: 160px;
+   box-shadow: 0px 2px 2px gray;
+   padding: 0;
+}
+
+nav > ul > li:hover > ul {
+   display: block;
+}
+
+nav > ul > li > ul > li {
+   border-bottom: 1px solid #666;
+}
+
+nav > ul > li > ul > li > a {
+   color: #666;
+   padding: 8px;
+   display: block;
+   font-size: 13px;
+   transition: all 300ms;
+}
+
+nav > ul > li > ul > li:hover {
+   background-color: #2ba977;
+}
+
+nav > ul > li > ul > li:hover > a {
+   color: white;
+   font-weight: bold;
+   font-size: 14px;
+}
+
+ 
+ /* Estilos contenido central  */
+ 
+ .title{
+    color:#444;
+    letter-spacing: 1px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+ }
+ 
+ .date{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: gray;;
+    text-align: right;
+ }
+ 
+ 
+ 
+ #content{
+    width: 1211px;
+    min-height:930px ;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: justify;
+    line-height: 20px;
+ }
+ 
+ .box{
+    background-color: white;
+    width: 95%;
+    min-height: 930px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin: 0 auto;
+ }
+ 
+ .box .image{
+    width: 45%;
+    float: left;
+    margin-right: 40px;
+ 
+ }
+ 
+ .box .image img{
+    width: 100%
+ }
+ 
+ .box a{
+    color: #444;
+    transition: all 300ms;
+ 
+ }
+ 
+ .box a:hover{
+    color: #2ba977;
+ }
+ 
+ .box form{
+    width: 80%;
+ }
+ 
+ 
+ .box form input,
+ .box form label{
+    display: block;
+    padding: 5px;
+    padding-left: 0;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-style: bold;
+    text-decoration: underline;
+    color: black;
+ }
+ 
+ .box form input[type="text"],
+ .box form input[type="email"],
+ .box form input[type="password"],
+ .box form textarea,
+ .box form select
+ {
+    width: 100%;
+    margin-bottom: 10px;
+ }
+ 
+ .box form select
+ {
+    width: 100px;
+ }
+ 
+ .message, 
+ .alert-success{
+    padding: 20px;
+    background-color: #2ba977;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2rem;
+ }
+ 
+ .alert-warning{
+    padding: 20px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2rem;
+ }
+ 
+ .title{
+    color: #444;
+    letter-spacing: 1px;
+    font-size: 30px;
+    padding-bottom: 50px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+ }
+ 
+ /* Estilos al Footer */
+ 
+ footer{
+    width: 1250px;
+    background-color: #2ba977;
+    border: 1px solid #333;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0px 0px 20px gray;
+    margin: 0 auto;
+ }
