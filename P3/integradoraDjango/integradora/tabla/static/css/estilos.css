@@ -1,0 +1,183 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+header, footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 0px 0;
+}
+
+main {
+    flex: 1; /* Para que el contenido principal ocupe el espacio restante */
+}
+
+h2 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+
+.container {
+    max-width: 600px; /* Más ajustado al centro */
+    margin: 10px auto;
+    padding: 10 px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 15px;
+    padding: 5px;
+    border: 0.5px solid #4CAF50;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+}
+
+form label {
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+form textarea {
+    resize: none;
+    height: 100px;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+form button {
+    width: 100%;
+    max-width: 300px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table td button,
+table td a {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+table td button:hover,
+table td a:hover {
+    background-color: #0b7dda;
+}
+
+/* Botón eliminar */
+table td a {
+    background-color: #f44336;
+}
+
+table td a:hover {
+    background-color: #d32f2f;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    form input[type="text"],
+    form input[type="number"],
+    form textarea {
+        max-width: 100%;
+    }
+
+    form button {
+        max-width: 100%;
+    }
+}
