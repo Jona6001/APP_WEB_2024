@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %} {% endblock title %} | Django
+    </title>
+    <!-- Carga del archivo CSS -->
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}" type="text/css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div id="logotipo">
+            <img src="{% static 'img/django.png' %}" alt="Imagen Django" title="Django">
+            <h1>Django Proyecto Web</h1>
+        </div>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="{% url 'inicio' %}">Inicio</a></li>
+            {% if user.email %}
+            <li><a href="{% url 'acercade' %}">Acerca de</a></li>
+            <li><a href="{% url 'mision' %}">Misión</a></li>
+            <li><a href="{% url 'vision' %}">Visión</a></li>
+            <li><a href="{% url 'logout' %}">Cerrar sesion</a></li>
+
+            <li><a href="{% url 'listado_articulos' %}">Articulos</a></li>
+            <li><a href="{% url 'listado_categorias' %}">Categorias</a></li>
+            {% else %}
+
+            <li><a href="{% url 'registro' %}">Registro</a></li>
+            <li><a href="{% url 'login' %}">Inicio de sesion</a></li>
+            {% endif %}
+
+
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <section id="content">
+        <div class="box">
+            {% block content %}
+            <!-- Aquí va el contenido específico de cada página -->
+            {% endblock content %}
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Django con Dagonline &copy; {{ now|date:"Y" }} | Última visita: {{ now|date:"d/m/Y" }}</p>
+    </footer>
+</body>
+</html>
